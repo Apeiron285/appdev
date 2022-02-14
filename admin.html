@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>TrashTalk</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>TrashTalk</h2>
+        <ul>
+            <li class="current"><a href="/"><i>Account Management</i></a> </li>
+            <li class="notcurrent"><a href="/faq"><i>Customer Support</i></a> </li>
+            <li class="notcurrent"><a href="#"><i>Inventory</i></a> </li>
+            <li class="notcurrent"><a href="#"><i>Transaction</i></a> </li>
+            <li class="notcurrent"><a href="#"><i>Rewards</i></a> </li>
+        </ul>
+    </div>
+    <div class="main_content">
+        <div class="header">hello</div>
+        <div class="info">
+            <div>lorem lorem</div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
